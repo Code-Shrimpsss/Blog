@@ -35,7 +35,20 @@ export default function HappyCodingWithoutTears() {
 	return (
 		<div className="h-screen mx-auto font-mono bg-white" ref={documentRef}>
 			{/* header */}
-			<Header />
+			{/* <Header /> */}
+			<div className="flex items-center mx-5 h-14">
+				<span className=" text-xl font-bold md:2xl">SHRIMPSSS</span>
+
+				<ul className="hidden md:flex">
+					<li className="mx-5">HOME</li>
+					<li className="mx-5">WORKS</li>
+					<li className="mx-5">ABOUT</li>
+				</ul>
+
+				<button className="px-3 py-1 ml-auto text-sm font-light text-white bg-black rounded-full">
+					Find Me
+				</button>
+			</div>
 
 			<div className="flex items-center py-5 justify-around px-5 font-serif font-black leading-tight border-t border-b border-black text-3xl md:text-6xl lg:text-8xl 2xl:leading-relaxed">
 				<div className="flex-1">
@@ -56,9 +69,9 @@ export default function HappyCodingWithoutTears() {
 			<div className="grid grid-cols-1 lg:grid-cols-3 gap-[1px]  border-b border-black bg-black ">
 				{/* First */}
 				<div className="relative p-5 overflow-hidden bg-white">
-					<div className="text-lg md:text-2xl w-[200px] md:w-[300px] leading-7">
+					<div className="text-lg md:text-2xl w-full sm:w-[300px] leading-7">
 						{/* docs */}
-						<div className=" z-40 bg-white">
+						<div className="">
 							<div className="text-2xl mb-2">
 								<h1>Front-End & Buidler </h1>
 							</div>
@@ -148,7 +161,7 @@ export default function HappyCodingWithoutTears() {
 
 						{/* clicle */}
 						<div
-							className="absolute right-0 translate-x-1/2 -translate-y-1/2 top-1/2"
+							className=" hidden sm:block absolute right-0 translate-x-1/2 -translate-y-1/2 top-1/2"
 							data-rotate
 						>
 							<div

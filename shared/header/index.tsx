@@ -1,6 +1,6 @@
 export default function Header() {
 	return (
-		<div className="flex items-center  mx-5 h-14">
+		<div className="flex items-center mx-5 h-14">
 			<span className=" text-xl font-bold md:2xl">SHRIMPSSS</span>
 
 			<ul className="hidden md:flex">
