@@ -10,9 +10,8 @@ import Link from 'next/link';
 import { gsap } from 'gsap';
 import { useEffect, useRef } from 'react';
 import { horizontalLoop } from '../utils/loop';
-import Header from '../shared/header';
 
-export default function HappyCodingWithoutTears() {
+export default function HOME() {
 	const documentRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -34,15 +33,19 @@ export default function HappyCodingWithoutTears() {
 
 	return (
 		<div className="h-screen mx-auto font-mono bg-white" ref={documentRef}>
-			{/* header */}
-			{/* <Header /> */}
 			<div className="flex items-center mx-5 h-14">
 				<span className=" text-xl font-bold md:2xl">SHRIMPSSS</span>
 
 				<ul className="hidden md:flex">
 					<li className="mx-5">HOME</li>
-					<li className="mx-5">WORKS</li>
-					<li className="mx-5">ABOUT</li>
+					<li className="mx-5">
+						BLOG
+						{/* <Link href="/blog"> BLOG </Link> */}
+					</li>
+					<li className="mx-5">
+						ABOUT
+						{/* <Link href="/blog"> ABOUT </Link> */}
+					</li>
 				</ul>
 
 				<button className="px-3 py-1 ml-auto text-sm font-light text-white bg-black rounded-full">
@@ -71,7 +74,7 @@ export default function HappyCodingWithoutTears() {
 				<div className="relative p-5 overflow-hidden bg-white">
 					<div className="text-lg md:text-2xl w-full sm:w-[300px] leading-7">
 						{/* docs */}
-						<div className="">
+						<div className=" z-40 relative bg-white">
 							<div className="text-2xl mb-2">
 								<h1>Front-End & Buidler </h1>
 							</div>

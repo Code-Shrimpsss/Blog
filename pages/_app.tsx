@@ -4,9 +4,13 @@ import { DefaultSeo } from 'next-seo';
 import SEO from '../seo/next-seo.json';
 import TITLE from '../seo/title.json';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import Loading from '../shared/loading';
 
 export default function App({ Component, pageProps }: AppProps) {
 	const router = useRouter();
+	const [loading, setLoading] = useState(false);
+
 	const currentTitle = TITLE.find((item) => item.path == router.pathname) || {
 		path: '/',
 		title: SEO.title,
@@ -14,11 +18,26 @@ export default function App({ Component, pageProps }: AppProps) {
 
 	const seo = { ...SEO, titleTemplate: currentTitle.title };
 
+	useEffect(() => {
+		const handleChangeStart = (url: string) => setLoading(true);
+		const handleChangeComplete = (url: string) => setLoading(false);
+
+		router.events.on('routeChangeStart', handleChangeStart);
+		router.events.on('routeChangeComplete', handleChangeComplete);
+		router.events.on('routeChangeError', handleChangeComplete);
+
+		return () => {
+			router.events.off('routeChangeStart', handleChangeStart);
+			router.events.off('routeChangeComplete', handleChangeComplete);
+			router.events.off('routeChangeError', handleChangeComplete);
+		};
+	}, [router]);
+
 	return (
 		<>
 			<DefaultSeo {...seo} />
-
-			<Component {...pageProps} />
+			<Loading loading={loading} />
+			{!loading && <Component {...pageProps} />}
 		</>
 	);
 }
