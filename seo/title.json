@@ -1,0 +1,18 @@
+[
+	{
+		"path": "/",
+		"title": "Shrimpss Blog"
+	},
+	{
+		"path": "/world",
+		"title": "World | Shrimpss"
+	},
+	{
+		"path": "/more",
+		"title": "More | Shrimpss"
+	},
+	{
+		"path": "/404",
+		"title": "404 | Shrimpss"
+	}
+]

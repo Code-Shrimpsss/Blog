@@ -1,0 +1,47 @@
+{
+	"title": "Shrimpsss",
+	"titleTemplate": "Shrimpsss",
+	"locale": "zh_CN",
+	"keywords": "Blog, 个人博客,前端,Frond-End",
+	"description": "Shrimpsss Blog",
+	"additionalLinkTags": [
+		{
+			"rel": "icon",
+			"href": "/favicon.ico"
+		}
+	],
+	"additionalMetaTags": [
+		{
+			"property": "application-name",
+			"content": "Shrimpsss"
+		},
+		{
+			"name": "keywords",
+			"content": "Blog, 个人博客,前端,Frond-End"
+		}
+	],
+	"openGraph": {
+		"title": "Shrimpsss",
+		"type": "website",
+		"url": "https://free-be.xyz",
+		"site_name": "FreeBe",
+		"description": "FreeBe是一个DAO工具,通过构建DAO-DNA链来实现DAO的可持续激励和发展。",
+		"images": [
+			{
+				"url": "https://s1.ax1x.com/2023/05/06/p9UTCL9.png",
+				"width": 600,
+				"height": 600
+			},
+			{
+				"url": "https://s1.ax1x.com/2023/05/06/p9UTCL9.png",
+				"width": 900,
+				"height": 900
+			},
+			{
+				"url": "https://s1.ax1x.com/2023/05/06/p9UTCL9.png",
+				"width": 1200,
+				"height": 1200
+			}
+		]
+	}
+}

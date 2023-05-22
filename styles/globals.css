@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 80vw;
+  height: 80vh;
+  margin:0 auto;
+  border: 1px solid black;
+}
+
+::selection {
+  background: black;
+  color: white;
+}
+
+.text-stroke {
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+}
+
+@media (min-width: 768px) {
+  .text-stroke {
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+  }
+}
+
+.tab_tip {
+  display: flex;
+}
+
+.tab_top li {
+    padding: 8px;
+    margin: 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-flex;
+}
