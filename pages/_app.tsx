@@ -38,6 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
 			<DefaultSeo {...seo} />
 			<Loading loading={loading} />
 			{!loading && <Component {...pageProps} />}
+			{/* <Component {...pageProps} /> */}
 		</>
 	);
 }

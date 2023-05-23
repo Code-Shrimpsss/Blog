@@ -4,7 +4,7 @@
 
 body {
   width: 80vw;
-  height: 80vh;
+  height: 116vh;
   margin:0 auto;
   border: 1px solid black;
 }
@@ -23,6 +23,11 @@ body {
   .text-stroke {
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px;
+  }
+
+  body {
+    height: 100vh;
+
   }
 }
 

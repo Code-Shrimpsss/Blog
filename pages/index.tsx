@@ -1,12 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-// import {
-// 	FaceSmileIcon,
-// 	ArrowRightIcon,
-// 	SparklesIcon,
-// } from '@heroicons/react/24/outline';
-
 import { gsap } from 'gsap';
 import { useEffect, useRef } from 'react';
 import { horizontalLoop } from '../utils/loop';
@@ -37,15 +30,16 @@ export default function HOME() {
 				<span className=" text-xl font-bold md:2xl">SHRIMPSSS</span>
 
 				<ul className="hidden md:flex">
-					<li className="mx-5">HOME</li>
+					{/* <li className="mx-5">HOME</li>
 					<li className="mx-5">
-						BLOG
-						{/* <Link href="/blog"> BLOG </Link> */}
+						<Link href="https://docs.shrimps.top/" target="_blank">
+							BLOG
+						</Link>
 					</li>
 					<li className="mx-5">
-						ABOUT
-						{/* <Link href="/blog"> ABOUT </Link> */}
-					</li>
+						<Link href="/blog"> ABOUT </Link>
+					</li> */}
+					<li className="ml-6">Look before your leap 🪩</li>
 				</ul>
 
 				<button className="px-3 py-1 ml-auto text-sm font-light text-white bg-black rounded-full">
@@ -72,11 +66,11 @@ export default function HOME() {
 			<div className="grid grid-cols-1 lg:grid-cols-3 gap-[1px]  border-b border-black bg-black ">
 				{/* First */}
 				<div className="relative p-5 overflow-hidden bg-white">
-					<div className="text-lg md:text-2xl w-full sm:w-[300px] leading-7">
+					<div className="text-lg md:text-2xl  sm:w-[300px] lg:w-full xl:w-[300px] leading-7">
 						{/* docs */}
-						<div className=" z-40 relative bg-white">
+						<div className=" relative z-40 h-full ">
 							<div className="text-2xl mb-2">
-								<h1>Front-End & Buidler </h1>
+								<h1>Full-Stack & Buidler </h1>
 							</div>
 							<div className="text-lg text-gray-400">
 								"Do not quench your inspiration and imagination;
@@ -86,7 +80,7 @@ export default function HOME() {
 							<div className="border-t-2 text-base mt-3 mb-1 border-gray-100">
 								{/* You can fine me in these places */}
 							</div>
-							{/* Other Card */}
+							{/* Link Card */}
 							<div className="text-lg md:text-2xl flex justify-between">
 								<Link
 									href="https://github.com/Code-Shrimpsss"
@@ -118,7 +112,7 @@ export default function HOME() {
 								</Link>
 
 								<Link
-									href="email:w9783094562@gmail.com"
+									href="mailto:w9783094562@gmail.com"
 									target="_blank"
 									className="flex items-center m-2 hover:bg-gray-200 p-2 rounded-full"
 									about="email"
@@ -164,7 +158,7 @@ export default function HOME() {
 
 						{/* clicle */}
 						<div
-							className=" hidden sm:block absolute right-0 translate-x-1/2 -translate-y-1/2 top-1/2"
+							className=" hidden sm:block lg:hidden 2xl:block absolute right-0 translate-x-1/2 -translate-y-1/2 top-1/2"
 							data-rotate
 						>
 							<div
@@ -179,12 +173,9 @@ export default function HOME() {
 				</div>
 				{/* Second */}
 				<div className="relative p-5 overflow-hidden bg-white ">
-					<div className="text-2xl">
-						You can fine me in these places
-					</div>
+					<div className="text-2xl ml-4">My Skill Tree 🌅</div>
 
-					{/* <div className="text-lg md:text-2xl w-[200px] md:w-[300px] leading-7"> */}
-					<div className="text-lg md:text-2xl leading-7 m-4">
+					<div className="text-lg 2xl:text-2xl mt-6 leading-7 m-4">
 						<ul className="tab_top">
 							<li className="bg-yellow-100">JavaScript</li>
 							<li className="bg-blue-300">React</li>
