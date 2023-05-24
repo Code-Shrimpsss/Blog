@@ -141,7 +141,7 @@ export default function HOME() {
 								</Link>
 
 								<Link
-									href="https://docs.shrimpsss.top"
+									href="https://docs.shrimps.top"
 									target="_blank"
 									className="flex items-center m-2 hover:bg-gray-200 p-2 rounded-full"
 								>
