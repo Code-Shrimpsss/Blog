@@ -141,7 +141,7 @@ export default function HOME() {
 								</Link>
 
 								<Link
-									href="https://github.com/Code-Shrimpsss"
+									href="https://docs.shrimpsss.top"
 									target="_blank"
 									className="flex items-center m-2 hover:bg-gray-200 p-2 rounded-full"
 								>
@@ -185,6 +185,7 @@ export default function HOME() {
 							<li className="bg-purple-200">Vite</li>
 							<li className="bg-green-200">Node</li>
 							<li className="bg-red-300">Express</li>
+							{/* <li className="bg-sky-200">TailwindCss</li> */}
 							<li className="bg-gray-100">Solidity</li>
 							<li className="bg-gray-200">Next</li>
 							<li className="bg-blue-200">Python</li>
