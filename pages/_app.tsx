@@ -7,6 +7,9 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Loading from '../shared/loading';
 
+// undebugger
+import '../utils/unDebugger';
+
 export default function App({ Component, pageProps }: AppProps) {
 	const router = useRouter();
 	const [loading, setLoading] = useState(false);
@@ -38,7 +41,6 @@ export default function App({ Component, pageProps }: AppProps) {
 			<DefaultSeo {...seo} />
 			<Loading loading={loading} />
 			{!loading && <Component {...pageProps} />}
-			{/* <Component {...pageProps} /> */}
 		</>
 	);
 }
